@@ -56,3 +56,7 @@ Public documentation research only; no Azure, Graph, Teams, or LLM service API c
 - **Q14 — RESOLVED:** Probe tool calling using the fake. Count individual calls; hitting 200 ends incomplete with no candidates. LLM timeout 60 seconds, two retries, then fallback.
 - **Q15 — RESOLVED:** Local SQLite state. Fingerprint hashes sorted candidate digests/verdicts; new alerts/requests only when fingerprint changes.
 - **Q16 — RESOLVED:** Decimal GB; timestamp-and-run-ID report files; 1,000-image fixture benchmark; exact release tag v0.1.
+
+### T3 pull schema verification — 2026-11-10
+
+Verified the [Microsoft table reference](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/containerregistryrepositoryevents): ContainerRegistryRepositoryEvents has Repository, Digest, TimeGenerated, LoginServer, OperationName, ResultType, ResultDescription, and _ResourceId. The [monitoring guide](https://learn.microsoft.com/en-us/azure/container-registry/monitor-container-registry) confirms diagnostic routing is required. The table does not enumerate exact Pull operation/result values. Phase 1 conservatively matches OperationName containing Pull and retains failed pull attempts as protective evidence rather than guessing a success filter. This can only retain extra images. Fixtures use the documented columns; production operation/result enumeration remains a verification gate. Registry filtering uses LoginServer.
