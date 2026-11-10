@@ -15,7 +15,7 @@ def text(value: str) -> str:
     return value.replace("\n", " ").replace("|", "\\|").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def reclaimable_bytes(images: list[Image], selected: set[str]) -> int:
+def reclaimable_bytes(images: list[Image], selected: set[tuple[str, str]]) -> int:
     """Count unique candidate graph blobs, excluding blobs retained by other roots."""
     inventory = {key(image): image for image in images}
     child_keys = {(i.repository, d) for i in images for d in i.child_digests}
@@ -30,7 +30,7 @@ def reclaimable_bytes(images: list[Image], selected: set[str]) -> int:
             for member in graph
             for digest, size in (member.blobs or {member.digest: member.size_bytes}).items()
         }
-        if image.digest in selected:
+        if key(image) in selected:
             for digest, size in blobs.items():
                 proposed[digest] = min(size, proposed.get(digest, size))
         elif key(image) not in child_keys:
@@ -99,14 +99,14 @@ def render_report(
             f"- {text(i.repository)}@{text(i.digest)} "
             f"(all tags: {text(', '.join(i.tags) or '(untagged)')})"
             for i in ordered
-            if i.digest in selected and i.tags
+            if key(i) in selected and i.tags
         ]
-        groups = Counter(i.repository for i in ordered if i.digest in selected and not i.tags)
+        groups = Counter(i.repository for i in ordered if key(i) in selected and not i.tags)
         for repo, count in sorted(groups.items()):
             members = [
-                i for i in ordered if i.repository == repo and not i.tags and i.digest in selected
+                i for i in ordered if i.repository == repo and not i.tags and key(i) in selected
             ]
-            size = reclaimable_bytes(members, {i.digest for i in members})
+            size = reclaimable_bytes(members, {key(i) for i in members})
             lines.append(
                 f"- {text(repo)}: {count} untagged manifests, {size} bytes; "
                 f"digests: {', '.join(text(i.digest) for i in members)}"

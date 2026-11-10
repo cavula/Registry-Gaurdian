@@ -69,14 +69,29 @@
           "id": "8",
           "name": "request_approval",
           "arguments": {
-            "digests": [
-              "sha256:stale",
-              "sha256:insecure",
-              "sha256:both",
-              "sha256:untagged",
-              "sha256:fallback"
-            ],
-            "summary": "Five eligible digests; local dry-run request."
+            "summary": "Five eligible digests; local dry-run request.",
+            "items": [
+              {
+                "repository": "app",
+                "digest": "sha256:stale"
+              },
+              {
+                "repository": "app",
+                "digest": "sha256:insecure"
+              },
+              {
+                "repository": "app",
+                "digest": "sha256:both"
+              },
+              {
+                "repository": "app",
+                "digest": "sha256:untagged"
+              },
+              {
+                "repository": "app",
+                "digest": "sha256:fallback"
+              }
+            ]
           }
         }
       ]

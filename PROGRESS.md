@@ -96,3 +96,9 @@ Validation at phase exit:
 - Tests prohibit outbound socket connections; no real Azure, Microsoft Graph, Teams, or LLM API calls were made.
 
 Release: tag exactly v0.1 after this summary is committed. STOPPED for human review at the Phase 1 boundary. Do not start Phase 2 until human approval.
+
+## v0.1 review fixes — active plan (2026-11-10)
+
+Before Phase 2, correct index staleness so an absent child Pull event means never pulled when history covers the window; missing child pushed_at or incomplete history still protects the index. Scope approval identities, requested items, fingerprints, runner/report checks and fixtures to repository/digest pairs. Update SPEC.md and resolve Q18. Add both requested regressions and invalid/duplicate item tests, run lint and all tests, commit exactly "v0.1 review fixes", tag v0.1.1 and push before T8.
+
+Review fixes complete: both regressions pass, repository-qualified request schemas/fingerprints/reporting and SPEC.md updated. Lint and all 106 tests pass; policy coverage remains 100%. Release tag v0.1.1.

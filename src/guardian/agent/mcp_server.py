@@ -51,7 +51,14 @@ INPUTS = {
         ],
     },
     "request_approval": object_schema(
-        {"digests": {**array_schema(STRING), "minItems": 1, "uniqueItems": True}, "summary": STRING}
+        {
+            "items": {
+                **array_schema(object_schema({"repository": STRING, "digest": STRING})),
+                "minItems": 1,
+                "uniqueItems": True,
+            },
+            "summary": STRING,
+        }
     ),
     "send_alert": object_schema({"digest": STRING, "message": STRING}),
 }
@@ -131,7 +138,7 @@ class ToolService:
         self.state = state
         self.evaluated: set[tuple[str, str]] = set()
         self.visited_repositories: set[str] = set()
-        self.requested: list[str] = []
+        self.requested: list[tuple[str, str]] = []
         self.alerts: dict[str, str] = {}
         self.safety_alerts: dict[str, str] = {}
         self.notifications: list[dict[str, Any]] = []
@@ -234,19 +241,21 @@ class ToolService:
                 ]
             }
         if name == "request_approval":
-            selected = arguments["digests"]
+            selected = [(item["repository"], item["digest"]) for item in arguments["items"]]
             if self.evaluated != {key(i) for i in self.images}:
                 raise ValueError("Every image must be evaluated before requesting approval")
-            candidates = {i.digest for i in self.images if i.verdict != Verdict.KEEP}
-            if set(selected) != candidates or any(
-                i.verdict == Verdict.KEEP for d in selected for i in self._matching(d)
-            ):
+            candidates = {key(i) for i in self.images if i.verdict != Verdict.KEEP}
+            if set(selected) != candidates:
                 raise ValueError("Request must contain all and only eligible policy candidates")
             if self.requested and self.requested != sorted(selected):
                 raise ValueError("Only one approval batch is allowed")
             self.requested = sorted(selected)
             value = fingerprint(
-                [(i.digest, i.verdict.value) for i in self.images if i.digest in selected]
+                [
+                    (i.repository, i.digest, i.verdict.value)
+                    for i in self.images
+                    if key(i) in selected
+                ]
             )
             return {"approval_id": "simulated-" + value[:16], "simulated": True}
         self.alerts[arguments["digest"]] = arguments["message"]
@@ -262,7 +271,11 @@ class ToolService:
             if self.alerts:
                 self._record_alerts()
             return
-        pairs = [(i.digest, i.verdict.value) for i in self.images if i.digest in self.requested]
+        pairs = [
+            (i.repository, i.digest, i.verdict.value)
+            for i in self.images
+            if key(i) in self.requested
+        ]
         identifier, emitted = self.state.record(
             self.config.registry.name + ":approval", fingerprint(pairs)
         )
@@ -272,7 +285,9 @@ class ToolService:
                     "kind": "approval",
                     "id": identifier,
                     "emitted": emitted,
-                    "digests": self.requested,
+                    "items": [
+                        {"repository": repo, "digest": digest} for repo, digest in self.requested
+                    ],
                 }
             )
             if emitted:
@@ -280,7 +295,9 @@ class ToolService:
                     "approval",
                     approval_id=identifier,
                     simulated=True,
-                    digests=self.requested,
+                    items=[
+                        {"repository": repo, "digest": digest} for repo, digest in self.requested
+                    ],
                     status="SIMULATED",
                 )
         self.alerts.update(self.safety_alerts)

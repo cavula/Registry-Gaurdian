@@ -21,7 +21,10 @@ def script(extra: list[dict] | None = None) -> dict:
         {
             "id": "4",
             "name": "request_approval",
-            "arguments": {"digests": ["a"], "summary": "Unused old image"},
+            "arguments": {
+                "items": [{"repository": "app", "digest": "a"}],
+                "summary": "Unused old image",
+            },
         },
     ]
     return {"responses": [{"tool_calls": calls + (extra or [])}, {"text": "Old image: stale."}]}
@@ -34,7 +37,7 @@ def test_provider_equivalent_run(provider: str, tmp_path: Path) -> None:
     client = ResilientClient([(settings.provider, FixtureLLM(script()))], tools.audit.write)
     result = run_agent(client, tools, NOW)
     assert result.complete and result.tool_calls == 4
-    assert tools.requested == ["a"]
+    assert tools.requested == [("app", "a")]
 
 
 def test_unsafe_and_incomplete_models(tmp_path: Path) -> None:

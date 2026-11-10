@@ -54,7 +54,7 @@ Public documentation research only; no Azure, Graph, Teams, or LLM service API c
 - **Q12 — RESOLVED:** No child referenced by any index is proposed alone; only orphans can be UNTAGGED. Traverse with deduplication; count each blob size once.
 - **Q13 — RESOLVED:** Local recording approval/alert fakes returning simulated IDs, no external calls. MCP stdio transport and JSON schemas for all tools.
 - **Q14 — RESOLVED:** Probe tool calling using the fake. Count individual calls; hitting 200 ends incomplete with no candidates. LLM timeout 60 seconds, two retries, then fallback.
-- **Q15 — RESOLVED:** Local SQLite state. Fingerprint hashes sorted candidate digests/verdicts; new alerts/requests only when fingerprint changes.
+- **Q15 — RESOLVED:** Local SQLite state. Fingerprint hashes sorted candidate (repository, digest, verdict) entries; new alerts/requests only when fingerprint changes.
 - **Q16 — RESOLVED:** Decimal GB; timestamp-and-run-ID report files; 1,000-image fixture benchmark; exact release tag v0.1.
 
 ### T3 pull schema verification — 2026-11-10
@@ -71,6 +71,8 @@ The per-image evaluate_policy requirement conflicted with the 200 individual-cal
 
 The inspected Defender sample exposes properties.resourceDetails.id, properties.status.severity, properties.status.code, properties.timeGenerated and properties.additionalData. These are documented example fields, not proof of current scan-time or digest mapping. That production mapping remains deferred under resolved Q08.
 
-### Q18 — OPEN (T6, future production)
+### Q18 — RESOLVED (v0.1 review, 2026-11-10)
 
 The tool input contract identifies candidates by digest alone, whereas inventory identifies repository/digest pairs. The same digest can exist in different repositories with different tags and protections. Current guardrails refuse the whole simulated batch if any matching record is KEEP, and the run becomes incomplete with no candidates. Options before production: use qualified repository/digest inputs or explicitly define registry-wide digest verdict aggregation. This is a conservative limitation, never a bypass of KEEP.
+
+User decision: request_approval accepts items of {repository, digest}; candidates, requested state and approval fingerprints use repository/digest pairs. SPEC.md and fixtures are updated. An app candidate can be approved while an identical protected digest in mirror remains KEEP. User also clarified Q07: absent child pull events are never-pulled evidence after complete history; only a missing child push timestamp or incomplete history forces KEEP.

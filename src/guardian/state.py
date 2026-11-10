@@ -7,8 +7,8 @@ from contextlib import closing
 from pathlib import Path
 
 
-def fingerprint(items: list[tuple[str, str]]) -> str:
-    """Hash the sorted unique digest/verdict pairs."""
+def fingerprint(items: list[tuple[str, ...]]) -> str:
+    """Hash the sorted unique identity/verdict entries, including repository for approvals."""
     return hashlib.sha256(json.dumps(sorted(set(items))).encode()).hexdigest()
 
 

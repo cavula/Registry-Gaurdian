@@ -22,7 +22,7 @@ Registry Guardian is a Python service that reviews container images in Azure Con
 
 **FR3 Security scan.** Get vulnerability results from Microsoft Defender for Containers in bulk with one Azure Resource Graph query per run (the securityresources table, container registry vulnerability assessments and their sub assessments), filtered to the configured registry and mapped to digests. Verify the current table and field names against Microsoft documentation and record them in OPEN_QUESTIONS.md if they differ. The agent identity needs Reader on the subscription. If Defender is unavailable, fall back to a local Trivy scan. Freshness rules are in FR20.
 
-**FR4 Policy evaluation.** Each digest gets one verdict: KEEP, STALE, INSECURE, STALE_AND_INSECURE, or UNTAGGED. Rules:
+**FR4 Policy evaluation.** Each (repository, digest) pair gets one verdict: KEEP, STALE, INSECURE, STALE_AND_INSECURE, or UNTAGGED. Rules:
 
 - STALE: meets the FR14 staleness rules (unused, older than `stale_days`, default 90, and no recent pull).
 - INSECURE: one or more CRITICAL vulnerabilities, or more than `max_high` (default 5) HIGH vulnerabilities, from a fresh scan (FR20).
@@ -34,7 +34,7 @@ Registry Guardian is a Python service that reviews container images in Azure Con
 
 **FR6 Alerts.** INSECURE images that are in use trigger an immediate Teams alert. They are never proposed for deletion.
 
-**FR7 Approval request.** Digests proposed for deletion are sent to Teams as one Adaptive Card listing each digest, all its tags, its verdict, and its reason. Requests with no decision expire after `approval_ttl_hours` (default 72). Only approvers can act on them (FR11).
+**FR7 Approval request.** Repository/digest pairs proposed for deletion are sent to Teams as one Adaptive Card listing each repository and digest, all its tags, its verdict, and its reason. Requests with no decision expire after `approval_ttl_hours` (default 72). Only approvers can act on them (FR11).
 
 **FR8 Purge.** When the grace period (FR12) ends, the executor handles only digests still SCHEDULED. For each one it rechecks policy, backs up (FR18), then deletes. Any digest whose verdict changed, or whose backup failed, is skipped and logged.
 
@@ -64,11 +64,12 @@ Registry Guardian is a Python service that reviews container images in Azure Con
 
 **FR15 Usage sources.** Each usage source is a pluggable `UsageSource` class returning digests in use. Build: AKS, Azure Container Apps, Azure App Service and Function Apps running containers, Azure Container Instances, and deployment manifests or Helm values in configured Git repos. Sources are listed under `usage_sources` in config. If any configured source fails, mark every candidate KEEP and alert in Teams. Acceptance: an image running only on Container Apps is KEEP.
 
-**FR16 Shared digests and multi architecture images.** The unit of deletion is the manifest digest, not the tag.
+**FR16 Shared digests and multi architecture images.** The unit of deletion is a (repository, manifest digest) pair, not a tag. A digest in one repository is evaluated independently from the same digest in another repository.
 
 - Before proposing a digest, list every tag pointing to it. If any of those tags is protected, newest, or in use, the digest is KEEP.
 - Approval cards and emails show all tags that disappear with each digest.
 - For a multi architecture image (manifest list or OCI index), in use and pull checks apply to the index and every child manifest. If any child is in use or recently pulled, the whole index is KEEP. Never delete a child manifest on its own.
+- With complete pull history for the applicable window, no Pull event for a child means never pulled and does not force KEEP. Missing child pushed_at or incomplete pull history forces KEEP for its index.
 - Respect ACR locks: digests with delete disabled are skipped and reported, never forced.
 - Acceptance: a digest tagged both `v1.2` and `prod` is KEEP; an index whose arm64 child is in use is KEEP.
 
@@ -134,11 +135,11 @@ registry-guardian/
 
 Image record: `registry`, `repository`, `tags` (list), `digest`, `manifest_type`, `child_digests`, `pushed_at`, `last_pulled_at`, `size_bytes`, `in_use` (bool), `vulns` (counts by severity), `scan_source`, `scanned_at`, `verdict`, `reasons` (list of strings).
 
-Approval record: `approval_id`, `run_id`, `digests`, `status` (PENDING, SCHEDULED, CANCELLED, REJECTED, EXPIRED, DELETED), `requested_at`, `decided_by`, `decided_at`, `scheduled_delete_at`, `cancelled_by`. Store approvals in Azure Table Storage, or a local SQLite file in dev.
+Approval record: `approval_id`, `run_id`, `items` (list of {repository, digest}), `status` (PENDING, SCHEDULED, CANCELLED, REJECTED, EXPIRED, DELETED), `requested_at`, `decided_by`, `decided_at`, `scheduled_delete_at`, `cancelled_by`. Store approvals in Azure Table Storage, or a local SQLite file in dev.
 
 ### RegistryAdapter interface
 
-Every registry implements `list_repositories()`, `list_images(repo)`, `delete_image(repo, digest)`. ACR is built now. Docker Hub and GHCR adapters are stubs that raise NotImplementedError.
+RegistryReader implements `list_repositories()` and `list_images(repo)`. The separate RegistryDeleter, available only to the Phase 2 executor, implements `delete_image(repo, digest)`. ACR is built now. Docker Hub and GHCR adapters are stubs that raise NotImplementedError.
 
 ### MCP tools exposed to the agent
 
@@ -149,15 +150,15 @@ Every registry implements `list_repositories()`, `list_images(repo)`, `delete_im
 | get_images_in_use | none | list of digests | none |
 | get_pull_history | none | latest Pull time per digest (FR14) | none |
 | get_scan_results | digest | vuln counts by severity, source, scan date | none |
-| evaluate_policy | digest | verdict and reasons | none |
-| request_approval | list of digests, summary | approval_id | posts to Teams |
+| evaluate_policy | digest or digests batch | verdict and reasons | none |
+| request_approval | items: list of {repository, digest}, summary | approval_id | posts to Teams |
 | send_alert | digest, message | ok | posts to Teams |
 
 The agent gets NO delete tool. Deletion only happens in `guardian purge`, which reads SCHEDULED records whose grace period has ended and runs outside the LLM.
 
 ### Agent behaviour
 
-Model: any provider supported by the LLM provider layer, chosen in config. The system prompt must state: review every repository, call evaluate_policy for each image, never propose an image whose verdict is KEEP, alert on in use insecure images, group all deletion candidates into one approval request, then write the report. Cap the loop at 200 tool calls per run.
+Model: any provider supported by the LLM provider layer, chosen in config. The system prompt must state: review every repository, call evaluate_policy for each image, never propose an image whose verdict is KEEP, alert on in use insecure images, group all deletion candidates into one approval request, then write the report. Cap the loop at 200 individual tool calls per run; evaluate_policy may batch digests. Approval candidates and the requested list use (repository, digest) pairs. Approval fingerprints hash sorted unique (repository, digest, verdict) entries, so identical digests in different repositories cannot collide.
 
 ### LLM provider layer
 

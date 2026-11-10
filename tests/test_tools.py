@@ -35,7 +35,10 @@ def test_all_eight_schemas_and_local_shapes(tmp_path: Path) -> None:
         ("get_pull_history", {}),
         ("get_scan_results", {"digest": "a"}),
         ("evaluate_policy", {"digest": "a"}),
-        ("request_approval", {"digests": ["a"], "summary": "Old image"}),
+        (
+            "request_approval",
+            {"items": [{"repository": "app", "digest": "a"}], "summary": "Old image"},
+        ),
         ("send_alert", {"digest": "a", "message": "Test"}),
     ]
     assert len(tools.definitions()) == 8
@@ -47,7 +50,10 @@ def test_all_eight_schemas_and_local_shapes(tmp_path: Path) -> None:
     repeated = service(tmp_path)
     repeated.call("list_images", {"registry": "demo", "repo": "app"})
     repeated.call("evaluate_policy", {"digest": "a"})
-    repeated.call("request_approval", {"digests": ["a"], "summary": "Old image"})
+    repeated.call(
+        "request_approval",
+        {"items": [{"repository": "app", "digest": "a"}], "summary": "Old image"},
+    )
     repeated.call("send_alert", {"digest": "a", "message": "Test"})
     repeated.finalize(True)
     assert all(not n["emitted"] for n in repeated.notifications)
@@ -60,7 +66,10 @@ def test_no_delete_or_unsafe_requests(tmp_path: Path) -> None:
     with pytest.raises(ValueError):
         tools.call("delete_image", {"digest": "a"})
     with pytest.raises(ValueError, match="Every image"):
-        tools.call("request_approval", {"digests": ["a"], "summary": "too early"})
+        tools.call(
+            "request_approval",
+            {"items": [{"repository": "app", "digest": "a"}], "summary": "too early"},
+        )
     with pytest.raises(ValidationError):
         tools.call("get_images_in_use", {"extra": True})
     with pytest.raises(ValueError):
@@ -76,13 +85,18 @@ def test_no_delete_or_unsafe_requests(tmp_path: Path) -> None:
     )
     guarded.call("evaluate_policy", {"digest": "a"})
     with pytest.raises(ValueError, match="eligible"):
-        guarded.call("request_approval", {"digests": ["a"], "summary": "unsafe"})
+        guarded.call(
+            "request_approval",
+            {"items": [{"repository": "app", "digest": "a"}], "summary": "unsafe"},
+        )
 
 
 def test_incomplete_discards_staged_notifications(tmp_path: Path) -> None:
     tools = service(tmp_path)
     tools.call("evaluate_policy", {"digest": "a"})
-    tools.call("request_approval", {"digests": ["a"], "summary": "test"})
+    tools.call(
+        "request_approval", {"items": [{"repository": "app", "digest": "a"}], "summary": "test"}
+    )
     tools.finalize(False)
     assert not tools.requested and not tools.notifications
 
@@ -114,12 +128,61 @@ def test_alert_resolution_then_reappearance_changes_fingerprint(tmp_path: Path) 
     assert returned.notifications[0]["emitted"]
 
 
-def test_cross_repository_keep_never_enters_batch(tmp_path: Path) -> None:
-    from guardian.models import Evidence
+def test_cross_repository_request_is_scoped(tmp_path: Path) -> None:
+    from guardian.state import fingerprint
 
     tools = service(tmp_path)
-    images = [image(), image(repository="protected", tags=["prod"])]
+    images = [
+        image(digest="sha256:same", tags=["old"]),
+        image(repository="mirror", digest="sha256:same", tags=["prod"]),
+    ]
     guarded = ToolService(None, images, config(), Evidence(), NOW, tools.audit, tools.state)
-    guarded.call("evaluate_policy", {"digests": ["a"]})
-    with pytest.raises(ValueError, match="eligible"):
-        guarded.call("request_approval", {"digests": ["a"], "summary": "ambiguous"})
+    guarded.call("evaluate_policy", {"digest": "sha256:same"})
+    result = guarded.call(
+        "request_approval",
+        {"items": [{"repository": "app", "digest": "sha256:same"}], "summary": "stale"},
+    )
+    assert result["simulated"]
+    assert guarded.requested == [("app", "sha256:same")]
+    guarded.finalize(True)
+    assert guarded.notifications[0]["items"] == [{"repository": "app", "digest": "sha256:same"}]
+    assert fingerprint([("app", "sha256:same", "STALE")]) != fingerprint(
+        [("mirror", "sha256:same", "STALE")]
+    )
+    with pytest.raises(ValidationError):
+        guarded.call("request_approval", {"digests": ["sha256:same"], "summary": "legacy"})
+    with pytest.raises(ValidationError):
+        guarded.call(
+            "request_approval",
+            {"items": [{"repository": "app", "digest": "sha256:same"}] * 2, "summary": "duplicate"},
+        )
+    with pytest.raises(ValueError):
+        guarded.call(
+            "request_approval",
+            {"items": [{"repository": "mirror", "digest": "sha256:same"}], "summary": "unsafe"},
+        )
+
+
+def test_identical_digest_two_eligible_repositories_are_distinct(tmp_path: Path) -> None:
+    tools = service(tmp_path)
+    guarded = ToolService(
+        None,
+        [image(repository="app"), image(repository="mirror")],
+        config(),
+        Evidence(),
+        NOW,
+        tools.audit,
+        tools.state,
+    )
+    guarded.call("evaluate_policy", {"digest": "a"})
+    guarded.call(
+        "request_approval",
+        {
+            "items": [
+                {"repository": "mirror", "digest": "a"},
+                {"repository": "app", "digest": "a"},
+            ],
+            "summary": "two independent candidates",
+        },
+    )
+    assert guarded.requested == [("app", "a"), ("mirror", "a")]

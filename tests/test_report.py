@@ -62,11 +62,11 @@ def test_report_snapshot(tmp_path: Path) -> None:
 def test_unique_and_retained_blob_accounting() -> None:
     a = image(digest="a", blobs={"shared": 100, "only-a": 50})
     b = image(digest="b", blobs={"shared": 100, "only-b": 70})
-    assert reclaimable_bytes([a, b], {"a", "b"}) == 220
-    assert reclaimable_bytes([a, b], {"a"}) == 50
+    assert reclaimable_bytes([a, b], {("app", "a"), ("app", "b")}) == 220
+    assert reclaimable_bytes([a, b], {("app", "a")}) == 50
     parent = image(digest="idx", manifest_type="index", child_digests=["a"], blobs={"idx": 10})
     a.tags = []
-    assert reclaimable_bytes([parent, a], {"idx"}) == 160
+    assert reclaimable_bytes([parent, a], {("app", "idx")}) == 160
 
 
 @pytest.mark.parametrize(
@@ -122,7 +122,7 @@ def test_1000_images_complete_benchmark(tmp_path: Path) -> None:
 def test_incomplete_report_never_counts_candidates(tmp_path: Path) -> None:
     config = settings(tmp_path)
     service, warnings = prepare(DEMO, config, AuditLog(config.audit_path, "incomplete"), NOW)
-    service.requested = ["sha256:stale"]
+    service.requested = [("app", "sha256:stale")]
     report = render_report(
         service,
         RunResult(complete=False, tool_calls=200, narrative="", failure="Tool call cap reached"),
@@ -145,3 +145,35 @@ def test_safety_alerts_survive_failed_model(tmp_path: Path) -> None:
     rows = [json.loads(line) for line in config.audit_path.read_text().splitlines()]
     assert any(row["event"] == "alert" and row.get("digest") == "sha256:live" for row in rows)
     assert not any(row["event"] == "approval" for row in rows)
+
+
+def test_approval_report_does_not_include_protected_mirror(tmp_path: Path) -> None:
+    from test_policy import config
+
+    from guardian.agent.mcp_server import ToolService
+    from guardian.models import Evidence
+    from guardian.state import StateStore
+
+    service = ToolService(
+        None,
+        [
+            image(digest="sha256:same", tags=["old"]),
+            image(repository="mirror", digest="sha256:same", tags=["prod"]),
+        ],
+        config(),
+        Evidence(),
+        NOW,
+        AuditLog(tmp_path / "audit", "scope"),
+        StateStore(tmp_path / "state"),
+    )
+    service.call("evaluate_policy", {"digest": "sha256:same"})
+    service.call(
+        "request_approval",
+        {"items": [{"repository": "app", "digest": "sha256:same"}], "summary": "old"},
+    )
+    report = render_report(
+        service, RunResult(complete=True, tool_calls=2, narrative=""), "scope", NOW, []
+    )
+    approval_section = report.split("## Items awaiting simulated approval")[1].split("##")[0]
+    assert "app@sha256:same" in approval_section
+    assert "mirror@" not in approval_section

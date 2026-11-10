@@ -117,7 +117,6 @@ def test_newest_tags_ties_and_shared_digest() -> None:
     [
         {"in_use": True},
         {"last_pulled_at": NOW - timedelta(days=1)},
-        {"last_pulled_at": None},
         {"tags": ["prod"]},
         {"locked": True},
         {"security_unknown": True},
@@ -165,3 +164,21 @@ def test_parent_pull_and_security_alert_facts() -> None:
     assert all(item.verdict == Verdict.KEEP for item in result)
     live = image(in_use=True, vulns={"CRITICAL": 1})
     assert verdict(live).verdict == Verdict.KEEP and insecure(live, config(), NOW)
+
+
+def test_index_child_never_pulled_with_complete_history_is_stale() -> None:
+    parent = image(
+        digest="idx",
+        tags=["v0"],
+        manifest_type="index",
+        child_digests=["child"],
+        pushed_at=NOW - timedelta(days=150),
+    )
+    child = image(digest="child", tags=[], pushed_at=NOW - timedelta(days=150), last_pulled_at=None)
+    full = Evidence(history_started_at=NOW - timedelta(days=200))
+    result = evaluate([parent, child], config(), full, NOW)
+    assert result[0].verdict == Verdict.STALE
+    assert result[1].verdict == Verdict.KEEP
+    assert evaluate([parent, child], config(), Evidence(), NOW)[0].verdict == Verdict.KEEP
+    child.pushed_at = None
+    assert evaluate([parent, child], config(), full, NOW)[0].verdict == Verdict.KEEP

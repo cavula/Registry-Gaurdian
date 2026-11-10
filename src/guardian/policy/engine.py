@@ -135,10 +135,8 @@ def evaluate(images: list[Image], config: Config, evidence: Evidence, now: datet
             reasons.append("incomplete or cyclic index graph")
         for member in graph:
             member_reasons = keep_reasons(member, config, evidence, now, newest, window)
-            if member is not original and (
-                member.pushed_at is None or member.last_pulled_at is None
-            ):
-                member_reasons.append("missing child timestamps")
+            if member is not original and (member.pushed_at is None or not history_complete):
+                member_reasons.append("missing child push timestamp or incomplete pull history")
             reasons.extend(member_reasons)
         if not image.tags:
             if not history_complete:
