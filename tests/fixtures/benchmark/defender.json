@@ -1,0 +1,6004 @@
+{
+  "results": [
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0000",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0001",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0002",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0003",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0004",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0005",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0006",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0007",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0008",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0009",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0010",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0011",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0012",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0013",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0014",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0015",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0016",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0017",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0018",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0019",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0020",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0021",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0022",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0023",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0024",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0025",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0026",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0027",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0028",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0029",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0030",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0031",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0032",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0033",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0034",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0035",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0036",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0037",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0038",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0039",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0040",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0041",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0042",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0043",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0044",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0045",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0046",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0047",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0048",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0049",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0050",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0051",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0052",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0053",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0054",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0055",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0056",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0057",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0058",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0059",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0060",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0061",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0062",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0063",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0064",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0065",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0066",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0067",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0068",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0069",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0070",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0071",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0072",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0073",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0074",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0075",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0076",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0077",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0078",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0079",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0080",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0081",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0082",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0083",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0084",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0085",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0086",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0087",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0088",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0089",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0090",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0091",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0092",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0093",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0094",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0095",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0096",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0097",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0098",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0099",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0100",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0101",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0102",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0103",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0104",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0105",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0106",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0107",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0108",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0109",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0110",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0111",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0112",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0113",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0114",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0115",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0116",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0117",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0118",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0119",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0120",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0121",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0122",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0123",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0124",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0125",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0126",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0127",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0128",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0129",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0130",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0131",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0132",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0133",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0134",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0135",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0136",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0137",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0138",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0139",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0140",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0141",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0142",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0143",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0144",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0145",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0146",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0147",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0148",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0149",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0150",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0151",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0152",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0153",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0154",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0155",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0156",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0157",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0158",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0159",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0160",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0161",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0162",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0163",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0164",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0165",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0166",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0167",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0168",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0169",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0170",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0171",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0172",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0173",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0174",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0175",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0176",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0177",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0178",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0179",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0180",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0181",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0182",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0183",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0184",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0185",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0186",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0187",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0188",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0189",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0190",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0191",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0192",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0193",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0194",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0195",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0196",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0197",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0198",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0199",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0200",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0201",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0202",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0203",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0204",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0205",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0206",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0207",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0208",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0209",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0210",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0211",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0212",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0213",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0214",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0215",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0216",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0217",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0218",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0219",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0220",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0221",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0222",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0223",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0224",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0225",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0226",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0227",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0228",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0229",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0230",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0231",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0232",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0233",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0234",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0235",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0236",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0237",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0238",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0239",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0240",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0241",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0242",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0243",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0244",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0245",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0246",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0247",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0248",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0249",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0250",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0251",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0252",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0253",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0254",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0255",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0256",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0257",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0258",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0259",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0260",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0261",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0262",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0263",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0264",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0265",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0266",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0267",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0268",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0269",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0270",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0271",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0272",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0273",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0274",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0275",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0276",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0277",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0278",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0279",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0280",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0281",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0282",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0283",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0284",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0285",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0286",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0287",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0288",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0289",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0290",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0291",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0292",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0293",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0294",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0295",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0296",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0297",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0298",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0299",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0300",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0301",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0302",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0303",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0304",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0305",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0306",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0307",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0308",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0309",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0310",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0311",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0312",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0313",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0314",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0315",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0316",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0317",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0318",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0319",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0320",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0321",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0322",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0323",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0324",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0325",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0326",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0327",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0328",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0329",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0330",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0331",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0332",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0333",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0334",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0335",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0336",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0337",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0338",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0339",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0340",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0341",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0342",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0343",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0344",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0345",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0346",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0347",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0348",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0349",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0350",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0351",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0352",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0353",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0354",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0355",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0356",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0357",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0358",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0359",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0360",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0361",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0362",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0363",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0364",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0365",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0366",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0367",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0368",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0369",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0370",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0371",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0372",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0373",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0374",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0375",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0376",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0377",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0378",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0379",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0380",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0381",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0382",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0383",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0384",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0385",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0386",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0387",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0388",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0389",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0390",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0391",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0392",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0393",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0394",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0395",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0396",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0397",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0398",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0399",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0400",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0401",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0402",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0403",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0404",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0405",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0406",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0407",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0408",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0409",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0410",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0411",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0412",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0413",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0414",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0415",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0416",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0417",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0418",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0419",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0420",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0421",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0422",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0423",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0424",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0425",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0426",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0427",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0428",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0429",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0430",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0431",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0432",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0433",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0434",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0435",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0436",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0437",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0438",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0439",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0440",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0441",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0442",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0443",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0444",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0445",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0446",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0447",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0448",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0449",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0450",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0451",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0452",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0453",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0454",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0455",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0456",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0457",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0458",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0459",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0460",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0461",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0462",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0463",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0464",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0465",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0466",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0467",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0468",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0469",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0470",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0471",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0472",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0473",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0474",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0475",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0476",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0477",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0478",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0479",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0480",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0481",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0482",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0483",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0484",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0485",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0486",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0487",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0488",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0489",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0490",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0491",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0492",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0493",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0494",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0495",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0496",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0497",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0498",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0499",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0500",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0501",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0502",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0503",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0504",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0505",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0506",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0507",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0508",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0509",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0510",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0511",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0512",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0513",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0514",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0515",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0516",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0517",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0518",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0519",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0520",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0521",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0522",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0523",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0524",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0525",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0526",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0527",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0528",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0529",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0530",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0531",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0532",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0533",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0534",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0535",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0536",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0537",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0538",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0539",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0540",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0541",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0542",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0543",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0544",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0545",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0546",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0547",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0548",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0549",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0550",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0551",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0552",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0553",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0554",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0555",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0556",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0557",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0558",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0559",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0560",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0561",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0562",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0563",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0564",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0565",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0566",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0567",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0568",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0569",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0570",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0571",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0572",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0573",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0574",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0575",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0576",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0577",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0578",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0579",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0580",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0581",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0582",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0583",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0584",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0585",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0586",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0587",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0588",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0589",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0590",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0591",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0592",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0593",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0594",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0595",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0596",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0597",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0598",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0599",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0600",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0601",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0602",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0603",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0604",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0605",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0606",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0607",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0608",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0609",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0610",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0611",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0612",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0613",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0614",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0615",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0616",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0617",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0618",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0619",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0620",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0621",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0622",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0623",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0624",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0625",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0626",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0627",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0628",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0629",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0630",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0631",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0632",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0633",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0634",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0635",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0636",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0637",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0638",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0639",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0640",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0641",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0642",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0643",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0644",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0645",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0646",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0647",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0648",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0649",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0650",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0651",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0652",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0653",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0654",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0655",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0656",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0657",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0658",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0659",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0660",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0661",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0662",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0663",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0664",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0665",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0666",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0667",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0668",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0669",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0670",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0671",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0672",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0673",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0674",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0675",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0676",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0677",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0678",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0679",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0680",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0681",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0682",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0683",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0684",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0685",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0686",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0687",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0688",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0689",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0690",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0691",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0692",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0693",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0694",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0695",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0696",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0697",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0698",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0699",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0700",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0701",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0702",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0703",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0704",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0705",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0706",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0707",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0708",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0709",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0710",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0711",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0712",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0713",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0714",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0715",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0716",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0717",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0718",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0719",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0720",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0721",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0722",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0723",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0724",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0725",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0726",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0727",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0728",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0729",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0730",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0731",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0732",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0733",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0734",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0735",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0736",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0737",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0738",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0739",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0740",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0741",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0742",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0743",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0744",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0745",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0746",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0747",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0748",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0749",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0750",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0751",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0752",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0753",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0754",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0755",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0756",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0757",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0758",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0759",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0760",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0761",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0762",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0763",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0764",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0765",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0766",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0767",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0768",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0769",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0770",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0771",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0772",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0773",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0774",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0775",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0776",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0777",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0778",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0779",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0780",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0781",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0782",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0783",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0784",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0785",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0786",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0787",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0788",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0789",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0790",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0791",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0792",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0793",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0794",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0795",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0796",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0797",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0798",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0799",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0800",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0801",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0802",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0803",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0804",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0805",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0806",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0807",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0808",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0809",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0810",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0811",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0812",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0813",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0814",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0815",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0816",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0817",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0818",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0819",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0820",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0821",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0822",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0823",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0824",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0825",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0826",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0827",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0828",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0829",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0830",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0831",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0832",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0833",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0834",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0835",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0836",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0837",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0838",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0839",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0840",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0841",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0842",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0843",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0844",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0845",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0846",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0847",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0848",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0849",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0850",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0851",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0852",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0853",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0854",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0855",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0856",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0857",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0858",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0859",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0860",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0861",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0862",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0863",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0864",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0865",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0866",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0867",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0868",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0869",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0870",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0871",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0872",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0873",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0874",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0875",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0876",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0877",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0878",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0879",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0880",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0881",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0882",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0883",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0884",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0885",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0886",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0887",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0888",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0889",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0890",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0891",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0892",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0893",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0894",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0895",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0896",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0897",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0898",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0899",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0900",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0901",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0902",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0903",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0904",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0905",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0906",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0907",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0908",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0909",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0910",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0911",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0912",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0913",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0914",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0915",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0916",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0917",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0918",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0919",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0920",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0921",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0922",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0923",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0924",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0925",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0926",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0927",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0928",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0929",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0930",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0931",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0932",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0933",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0934",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0935",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0936",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0937",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0938",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0939",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0940",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0941",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0942",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0943",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0944",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0945",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0946",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0947",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0948",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0949",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0950",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0951",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0952",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0953",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0954",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0955",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0956",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0957",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0958",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0959",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0960",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0961",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0962",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0963",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0964",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0965",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0966",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0967",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0968",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0969",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0970",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0971",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0972",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0973",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0974",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0975",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0976",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0977",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0978",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0979",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0980",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0981",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0982",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0983",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0984",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0985",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0986",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0987",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0988",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0989",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0990",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0991",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0992",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0993",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0994",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0995",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0996",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0997",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0998",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:bench-0999",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    }
+  ]
+}

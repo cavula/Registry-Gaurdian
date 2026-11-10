@@ -68,3 +68,9 @@ Rechecked Microsoft's Resource Graph sample and release-notes pages linked above
 ### Q17 — RESOLVED (T6, T7, T10; 2026-11-10)
 
 The per-image evaluate_policy requirement conflicted with the 200 individual-call cap for a 1,000-image registry. The user approved batch policy evaluation. Extend evaluate_policy to accept either digest or a nonempty unique digests array, returning one result per image; retain eight tools and the 200 individual-call cap. The 1,000-image benchmark must complete a full review using batching, not silently settle for incomplete.
+
+The inspected Defender sample exposes properties.resourceDetails.id, properties.status.severity, properties.status.code, properties.timeGenerated and properties.additionalData. These are documented example fields, not proof of current scan-time or digest mapping. That production mapping remains deferred under resolved Q08.
+
+### Q18 — OPEN (T6, future production)
+
+The tool input contract identifies candidates by digest alone, whereas inventory identifies repository/digest pairs. The same digest can exist in different repositories with different tags and protections. Current guardrails refuse the whole simulated batch if any matching record is KEEP, and the run becomes incomplete with no candidates. Options before production: use qualified repository/digest inputs or explicitly define registry-wide digest verdict aggregation. This is a conservative limitation, never a bypass of KEEP.

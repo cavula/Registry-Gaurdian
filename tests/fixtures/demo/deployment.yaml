@@ -1,0 +1,4 @@
+image:
+  registry: demo
+  repository: app
+  digest: sha256:arm

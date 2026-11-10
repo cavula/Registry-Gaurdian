@@ -49,6 +49,14 @@ class Image(BaseModel):
         """Normalize all evidence dates."""
         return utc(value) if value else None
 
+    @field_validator("blobs")
+    @classmethod
+    def nonnegative_blob_sizes(cls, value: dict[str, int]) -> dict[str, int]:
+        """Reject invalid physical storage evidence."""
+        if any(size < 0 for size in value.values()):
+            raise ValueError("Blob sizes must be nonnegative")
+        return value
+
     @field_validator("manifest_type")
     @classmethod
     def valid_manifest_type(cls, value: str) -> str:

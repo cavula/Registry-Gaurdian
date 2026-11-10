@@ -1,0 +1,204 @@
+{
+  "images": [
+    {
+      "registry": "demo",
+      "repository": "app",
+      "digest": "sha256:protected",
+      "tags": [
+        "prod"
+      ],
+      "pushed_at": "2026-07-13T00:00:00+00:00",
+      "size_bytes": 100,
+      "blobs": {
+        "sha256:protected": 100,
+        "blob-sha256:protected": 1000000000
+      }
+    },
+    {
+      "registry": "demo",
+      "repository": "app",
+      "digest": "sha256:stale",
+      "tags": [
+        "v-stale"
+      ],
+      "pushed_at": "2026-07-13T00:00:00+00:00",
+      "size_bytes": 100,
+      "blobs": {
+        "sha256:stale": 100,
+        "blob-sha256:stale": 1000000000
+      }
+    },
+    {
+      "registry": "demo",
+      "repository": "app",
+      "digest": "sha256:insecure",
+      "tags": [
+        "v-risk"
+      ],
+      "pushed_at": "2026-10-31T00:00:00+00:00",
+      "size_bytes": 100,
+      "blobs": {
+        "sha256:insecure": 100,
+        "blob-sha256:insecure": 1000000000
+      }
+    },
+    {
+      "registry": "demo",
+      "repository": "app",
+      "digest": "sha256:both",
+      "tags": [
+        "v-both"
+      ],
+      "pushed_at": "2026-07-13T00:00:00+00:00",
+      "size_bytes": 100,
+      "blobs": {
+        "sha256:both": 100,
+        "blob-sha256:both": 1000000000
+      }
+    },
+    {
+      "registry": "demo",
+      "repository": "app",
+      "digest": "sha256:untagged",
+      "tags": [],
+      "pushed_at": "2026-10-31T00:00:00+00:00",
+      "size_bytes": 100,
+      "blobs": {
+        "sha256:untagged": 100,
+        "blob-sha256:untagged": 1000000000
+      }
+    },
+    {
+      "registry": "demo",
+      "repository": "app",
+      "digest": "sha256:index",
+      "tags": [
+        "v-index"
+      ],
+      "pushed_at": "2026-07-13T00:00:00+00:00",
+      "size_bytes": 100,
+      "blobs": {
+        "sha256:index": 100,
+        "blob-sha256:index": 1000000000
+      },
+      "manifest_type": "index",
+      "child_digests": [
+        "sha256:arm"
+      ]
+    },
+    {
+      "registry": "demo",
+      "repository": "app",
+      "digest": "sha256:arm",
+      "tags": [],
+      "pushed_at": "2026-07-13T00:00:00+00:00",
+      "size_bytes": 100,
+      "blobs": {
+        "sha256:arm": 100,
+        "blob-sha256:arm": 1000000000
+      },
+      "last_pulled_at": "2026-06-13T00:00:00+00:00"
+    },
+    {
+      "registry": "demo",
+      "repository": "app",
+      "digest": "sha256:shared",
+      "tags": [
+        "v1.2",
+        "prod"
+      ],
+      "pushed_at": "2026-07-13T00:00:00+00:00",
+      "size_bytes": 100,
+      "blobs": {
+        "sha256:shared": 100,
+        "blob-sha256:shared": 1000000000
+      }
+    },
+    {
+      "registry": "demo",
+      "repository": "app",
+      "digest": "sha256:unknown",
+      "tags": [
+        "v-unknown"
+      ],
+      "pushed_at": "2026-07-13T00:00:00+00:00",
+      "size_bytes": 100,
+      "blobs": {
+        "sha256:unknown": 100,
+        "blob-sha256:unknown": 1000000000
+      }
+    },
+    {
+      "registry": "demo",
+      "repository": "app",
+      "digest": "sha256:fallback",
+      "tags": [
+        "v-fallback"
+      ],
+      "pushed_at": "2026-07-13T00:00:00+00:00",
+      "size_bytes": 100,
+      "blobs": {
+        "sha256:fallback": 100,
+        "blob-sha256:fallback": 1000000000
+      }
+    },
+    {
+      "registry": "demo",
+      "repository": "app",
+      "digest": "sha256:recent",
+      "tags": [
+        "v-recent"
+      ],
+      "pushed_at": "2026-07-13T00:00:00+00:00",
+      "size_bytes": 100,
+      "blobs": {
+        "sha256:recent": 100,
+        "blob-sha256:recent": 1000000000
+      }
+    },
+    {
+      "registry": "demo",
+      "repository": "app",
+      "digest": "sha256:boundary",
+      "tags": [
+        "v-boundary"
+      ],
+      "pushed_at": "2026-08-12T00:00:00+00:00",
+      "size_bytes": 100,
+      "blobs": {
+        "sha256:boundary": 100,
+        "blob-sha256:boundary": 1000000000
+      }
+    },
+    {
+      "registry": "demo",
+      "repository": "app",
+      "digest": "sha256:newest",
+      "tags": [
+        "new1",
+        "new2",
+        "new3"
+      ],
+      "pushed_at": "2026-11-09T00:00:00+00:00",
+      "size_bytes": 100,
+      "blobs": {
+        "sha256:newest": 100,
+        "blob-sha256:newest": 1000000000
+      }
+    },
+    {
+      "registry": "demo",
+      "repository": "app",
+      "digest": "sha256:live",
+      "tags": [
+        "v-live"
+      ],
+      "pushed_at": "2026-07-13T00:00:00+00:00",
+      "size_bytes": 100,
+      "blobs": {
+        "sha256:live": 100,
+        "blob-sha256:live": 1000000000
+      }
+    }
+  ]
+}

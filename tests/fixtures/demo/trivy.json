@@ -1,0 +1,10 @@
+{
+  "results": [
+    {
+      "repository": "app",
+      "digest": "sha256:fallback",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    }
+  ]
+}

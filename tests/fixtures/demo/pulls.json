@@ -1,0 +1,15 @@
+{
+  "enabled_on": "2026-04-24T00:00:00+00:00",
+  "rows": [
+    {
+      "Repository": "app",
+      "Digest": "sha256:recent",
+      "last_pulled_at": "2026-11-09T00:00:00+00:00"
+    },
+    {
+      "Repository": "app",
+      "Digest": "sha256:arm",
+      "last_pulled_at": "2026-06-13T00:00:00+00:00"
+    }
+  ]
+}

@@ -82,5 +82,4 @@ def test_cli_requires_offline_fixtures() -> None:
     args = parser().parse_args(["run", "--fixtures", "demo"])
     assert args.fixtures == Path("demo")
     assert args.config == Path("config.yaml")
-    with pytest.raises(SystemExit, match="pending"):
-        main(["run", "--fixtures", "demo"])
+    assert main(["run", "--fixtures", "demo", "--config", "nonexistent-config.yaml"]) == 2

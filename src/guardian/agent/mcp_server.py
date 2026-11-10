@@ -37,12 +37,18 @@ INPUTS = {
     "get_pull_history": object_schema({}),
     "get_scan_results": object_schema({"digest": STRING}),
     "evaluate_policy": {
+        "type": "object",
+        "properties": {
+            "digest": STRING,
+            "digests": {**array_schema(STRING), "minItems": 1, "uniqueItems": True},
+        },
+        "additionalProperties": False,
         "oneOf": [
             object_schema({"digest": STRING}),
             object_schema(
                 {"digests": {**array_schema(STRING), "minItems": 1, "uniqueItems": True}}
             ),
-        ]
+        ],
     },
     "request_approval": object_schema(
         {"digests": {**array_schema(STRING), "minItems": 1, "uniqueItems": True}, "summary": STRING}
@@ -110,7 +116,7 @@ class ToolService:
 
     def __init__(
         self,
-        reader: RegistryReader,
+        reader: RegistryReader | None,
         images: list[Image],
         config: Config,
         evidence: Evidence,
@@ -127,6 +133,7 @@ class ToolService:
         self.visited_repositories: set[str] = set()
         self.requested: list[str] = []
         self.alerts: dict[str, str] = {}
+        self.safety_alerts: dict[str, str] = {}
         self.notifications: list[dict[str, Any]] = []
         self.complete = False
         for image in self.images:
@@ -250,8 +257,10 @@ class ToolService:
         self.complete = complete
         if not complete:
             self.requested = []
-            self.alerts = {}
+            self.alerts = self.safety_alerts.copy()
             self.audit.write("run_incomplete", candidates_discarded=True)
+            if self.alerts:
+                self._record_alerts()
             return
         pairs = [(i.digest, i.verdict.value) for i in self.images if i.digest in self.requested]
         identifier, emitted = self.state.record(
@@ -274,21 +283,30 @@ class ToolService:
                     digests=self.requested,
                     status="SIMULATED",
                 )
+        self.alerts.update(self.safety_alerts)
+        self._record_alerts()
+
+    def _record_alerts(self) -> None:
+        """Persist safety facts even when a model review is incomplete."""
+        alert_pairs = [
+            (digest, next((i.verdict.value for i in self.images if i.digest == digest), "KEEP"))
+            for digest in self.alerts
+        ]
+        _, alerts_changed = self.state.record(
+            self.config.registry.name + ":alerts", fingerprint(alert_pairs)
+        )
         for digest, message in self.alerts.items():
-            label = next((i.verdict.value for i in self.images if i.digest == digest), "KEEP")
-            alert_id, emitted = self.state.record(
-                self.config.registry.name + ":alert:" + digest, fingerprint([(digest, label)])
-            )
+            alert_id = "simulated-alert-" + digest
             self.notifications.append(
                 {
                     "kind": "alert",
                     "id": alert_id,
-                    "emitted": emitted,
+                    "emitted": alerts_changed,
                     "digest": digest,
                     "message": message,
                 }
             )
-            if emitted:
+            if alerts_changed:
                 self.audit.write(
                     "alert", alert_id=alert_id, digest=digest, message=message, simulated=True
                 )

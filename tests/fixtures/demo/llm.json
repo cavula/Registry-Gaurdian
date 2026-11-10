@@ -1,0 +1,88 @@
+{
+  "tool_calling": true,
+  "responses": [
+    {
+      "tool_calls": [
+        {
+          "id": "1",
+          "name": "list_repositories",
+          "arguments": {
+            "registry": "demo"
+          }
+        },
+        {
+          "id": "2",
+          "name": "list_images",
+          "arguments": {
+            "registry": "demo",
+            "repo": "app"
+          }
+        },
+        {
+          "id": "3",
+          "name": "get_images_in_use",
+          "arguments": {}
+        },
+        {
+          "id": "4",
+          "name": "get_pull_history",
+          "arguments": {}
+        },
+        {
+          "id": "5",
+          "name": "get_scan_results",
+          "arguments": {
+            "digest": "sha256:live"
+          }
+        },
+        {
+          "id": "6",
+          "name": "evaluate_policy",
+          "arguments": {
+            "digests": [
+              "sha256:protected",
+              "sha256:stale",
+              "sha256:insecure",
+              "sha256:both",
+              "sha256:untagged",
+              "sha256:index",
+              "sha256:arm",
+              "sha256:shared",
+              "sha256:unknown",
+              "sha256:fallback",
+              "sha256:recent",
+              "sha256:boundary",
+              "sha256:newest",
+              "sha256:live"
+            ]
+          }
+        },
+        {
+          "id": "7",
+          "name": "send_alert",
+          "arguments": {
+            "digest": "sha256:live",
+            "message": "In-use image has a CRITICAL vulnerability; kept."
+          }
+        },
+        {
+          "id": "8",
+          "name": "request_approval",
+          "arguments": {
+            "digests": [
+              "sha256:stale",
+              "sha256:insecure",
+              "sha256:both",
+              "sha256:untagged",
+              "sha256:fallback"
+            ],
+            "summary": "Five eligible digests; local dry-run request."
+          }
+        }
+      ]
+    },
+    {
+      "text": "Top risk: the running live image has a CRITICAL vulnerability and is kept. The both image is stale and insecure; insecure exceeds the HIGH limit. Stale and fallback are unused and old, and untagged is an old orphan. The unknown image needs scanning. All requests and alerts are simulated."
+    }
+  ]
+}

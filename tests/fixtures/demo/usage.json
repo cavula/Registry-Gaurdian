@@ -1,0 +1,18 @@
+{
+  "aks": {
+    "items": [
+      {
+        "spec": {
+          "containers": [
+            {
+              "image": "demo/app@sha256:live"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "git_manifests": [
+    "deployment.yaml"
+  ]
+}

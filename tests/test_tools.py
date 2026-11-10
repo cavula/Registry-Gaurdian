@@ -100,3 +100,26 @@ def test_mcp_protocol_handler_has_structured_output(tmp_path: Path) -> None:
     response = asyncio.run(server.request_handlers[CallToolRequest](request))
     assert not response.root.isError
     assert response.root.structuredContent == {"repositories": ["app"]}
+
+
+def test_alert_resolution_then_reappearance_changes_fingerprint(tmp_path: Path) -> None:
+    first = service(tmp_path)
+    first.alerts["a"] = "insecure"
+    first.finalize(True)
+    cleared = service(tmp_path)
+    cleared.finalize(True)
+    returned = service(tmp_path)
+    returned.alerts["a"] = "insecure"
+    returned.finalize(True)
+    assert returned.notifications[0]["emitted"]
+
+
+def test_cross_repository_keep_never_enters_batch(tmp_path: Path) -> None:
+    from guardian.models import Evidence
+
+    tools = service(tmp_path)
+    images = [image(), image(repository="protected", tags=["prod"])]
+    guarded = ToolService(None, images, config(), Evidence(), NOW, tools.audit, tools.state)
+    guarded.call("evaluate_policy", {"digests": ["a"]})
+    with pytest.raises(ValueError, match="eligible"):
+        guarded.call("request_approval", {"digests": ["a"], "summary": "ambiguous"})

@@ -1,0 +1,88 @@
+{
+  "results": [
+    {
+      "repository": "app",
+      "digest": "sha256:protected",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:stale",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:insecure",
+      "vulns": {
+        "HIGH": 6
+      },
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:both",
+      "vulns": {
+        "CRITICAL": 1
+      },
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:untagged",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:index",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:arm",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:shared",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:fallback",
+      "vulns": {},
+      "scanned_at": "2026-10-11T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:recent",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:boundary",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:newest",
+      "vulns": {},
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    },
+    {
+      "repository": "app",
+      "digest": "sha256:live",
+      "vulns": {
+        "CRITICAL": 1
+      },
+      "scanned_at": "2026-11-10T00:00:00+00:00"
+    }
+  ]
+}

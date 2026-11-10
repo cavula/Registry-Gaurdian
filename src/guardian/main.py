@@ -12,6 +12,9 @@ def parser() -> argparse.ArgumentParser:
     run = sub.add_parser("run", help="Review a registry offline")
     run.add_argument("--config", type=Path, default=Path("./config.yaml"))
     run.add_argument("--fixtures", type=Path, required=True)
+    mcp = sub.add_parser("mcp", help="Serve the eight offline tools over stdio")
+    mcp.add_argument("--config", type=Path, default=Path("./config.yaml"))
+    mcp.add_argument("--fixtures", type=Path, required=True)
     llm = sub.add_parser("llm", help="Probe an offline model fixture")
     helper = llm.add_subparsers(dest="llm_command", required=True).add_parser("test")
     helper.add_argument("--fixtures", type=Path, required=True)
@@ -35,4 +38,28 @@ def main(argv: list[str] | None = None) -> int:
             "tool_calling=true transport=fixture"
         )
         return 0
-    raise SystemExit("Offline pipeline is pending T2–T7 and T10.")
+    from guardian.config import load_config
+    from guardian.offline import execute
+
+    try:
+        config = load_config(args.config)
+    except Exception:
+        print("Invalid or missing configuration")
+        return 2
+    if args.command == "mcp":
+        import asyncio
+        from datetime import UTC, datetime
+        from uuid import uuid4
+
+        from guardian.agent.mcp_server import serve_stdio
+        from guardian.audit.log import AuditLog
+        from guardian.offline import prepare, read_json
+
+        data = read_json(args.fixtures / "run.json")
+        now = datetime.fromisoformat(data["now"]) if data.get("now") else datetime.now(UTC)
+        service, _ = prepare(args.fixtures, config, AuditLog(config.audit_path, str(uuid4())), now)
+        asyncio.run(serve_stdio(service))
+        return 0
+    path, result = execute(args.fixtures, config)
+    print(f"Report: {path} (status={'complete' if result.complete else 'incomplete'})")
+    return 0 if result.complete else 1
