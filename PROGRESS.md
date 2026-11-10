@@ -2,7 +2,7 @@
 
 ## Phase 1 — v0.1 planning (2026-11-10)
 
-Read AGENTS.md and SPEC.md in full. This update is documentation only; no implementation, installation, or build tasks have started. SPEC.md remains the source of truth. All tasks below are pending, and questions are recorded in OPEN_QUESTIONS.md rather than resolved by assumption.
+Read AGENTS.md and SPEC.md in full. The initial plan was documentation only. Implementation is now authorized for Phase 1. SPEC.md remains the source of truth. Q01–Q16 are resolved in OPEN_QUESTIONS.md by the user's decisions. Tasks begin sequentially below.
 
 ### Scope and execution rules
 
@@ -14,10 +14,10 @@ Before coding each task, review and refine its plan here. After each implementat
 
 ### Task plans
 
-- [ ] **T1 — Scaffold, configuration, audit, CLI.** Set up Python 3.11+ packaging, typed modules, ruff/pytest configuration, validated config loading, JSON-lines audit logging with run IDs and timestamps, and the CLI entry point. Keep credentials in environment variables and redact sensitive values. Test defaults, invalid config, decimal thresholds (including grace_period_hours), audit shape, and CLI validation. Resolve Q01 and Q02 before finalizing relevant behavior.
+- [x] **T1 — Scaffold, configuration, audit, CLI.** Set up Python 3.11+ packaging, typed modules, ruff/pytest configuration, validated config loading, JSON-lines audit logging with run IDs and timestamps, and the CLI entry point. Keep credentials in environment variables and redact sensitive values. Test defaults, invalid config, decimal thresholds (including grace_period_hours), audit shape, and CLI validation. Resolve Q01 and Q02 before finalizing relevant behavior.
 - [ ] **T2 — Registry interface and ACR inventory.** Define the adapter interface and implement ACR inventory using injected/mock Azure SDK clients and DefaultAzureCredential wiring. Normalize all tags per digest, manifest type, children, timestamps, size, and lock status; provide Docker Hub/GHCR stubs raising NotImplementedError. Test pagination, shared digests, indexes, locks, and SDK failures without live calls. Resolve Q03 and Q04 before implementing the deletion interface or inventory failure behavior; expose no delete tool to the agent.
 - [ ] **T3 — Phase 1 usage sources and pull history.** Define UsageSource and implement AKS and configured Git manifest/Helm-value discovery with tag-to-digest resolution. Aggregate one pull-history query per run by repository and digest; carry warm-up completeness and failure state into policy/report inputs. Test fixtures for referenced images, children, recent pulls, warm-up, and failures that force KEEP and record a local alert. Defer remaining FR15 sources to Phase 3. Resolve Q05–Q07 before dependent parsing and query behavior.
-- [ ] **T4 — Defender and Trivy scanning.** Verify current Microsoft documentation and record the supported Resource Graph schema before coding the one-query-per-run registry-filtered Defender client. Normalize digest results, severity counts, and timestamps; use mocked Trivy fallback for missing/stale Defender data. Test freshness boundaries, failed scans, UNKNOWN reporting, and fail-safe KEEP. Resolve Q08 and Q09 before encoding query and fallback semantics.
+- [ ] **T4 — Defender and Trivy scanning.** Verify current Microsoft documentation and record the supported Resource Graph schema before production; use the ScanProvider interface and Defender fixtures only in Phase 1. Normalize digest results, severity counts, and timestamps; use mocked Trivy fallback for missing/stale Defender data. Test freshness boundaries, failed scans, UNKNOWN reporting, and fail-safe KEEP. Resolve Q08 and Q09 before encoding query and fallback semantics.
 - [ ] **T5 — Pure policy engine.** Implement deterministic, typed pure functions with an explicit evaluation time and no network/file access. Cover FR4, FR14, FR16, FR17, and scan freshness inputs: KEEP overrides, newest tags, shared digests, index/child protections, locks, staleness, vulnerability counts, untagged rules, incomplete history, and failed evidence. Keep in-use security alert facts separate from the KEEP verdict. Use table-driven edge/boundary tests and enforce at least 80% policy coverage. Resolve Q09–Q12 before choosing ambiguous precedence or time rules.
 - [ ] **T6 — MCP tools.** Expose the eight documented tool names with validated inputs and documented result shapes; keep evaluation authoritative in policy code. For Phase 1, approval/alert calls must use local recording fakes with no Teams/Graph side effects. Test each shape, invalid inputs, guardrails against KEEP proposals, and absence of any delete tool. Resolve Q13 before finalizing local approval semantics and MCP transport.
 - [ ] **T7 — LLM layer and agent loop.** Implement the provider-neutral LLMClient interface, LiteLLM wiring behind injected fakes, config-driven providers/fallbacks, startup tool-calling validation, and the CLI helper without making real LLM calls. Implement the prescribed prompt and bounded loop reviewing every repository/image and producing one local candidate batch/report input. Test scripted tool calls with anthropic, openai, and azure_openai configurations, fallback/timeouts, no delete capability, and the 200-call limit. Resolve Q14 and Q15 before dependent persistence and call-cap behavior.
@@ -26,3 +26,11 @@ Before coding each task, review and refine its plan here. After each implementat
 ### Phase exit (future; not performed by this planning update)
 
 After all Phase 1 tasks are complete, run lint and all tests, confirm policy coverage and the offline command outcome, record a phase summary here, commit it, and tag v0.1. STOP for human review before Phase 2. Confirm the release tag convention in Q16 before tagging. No release tag is created during planning.
+
+## Execution log
+
+### T1 — active plan
+
+Implement typed validated Phase 1 configuration (decimal ages, integer counts, UTC paths/defaults), safe JSONL audit output, and argparse CLI scaffolding for offline runs. Add local SQLite fingerprint state foundation. No live API clients or deletion interfaces. Test invalid inputs, defaults, audit redaction and CLI behavior. Later tasks will connect the fixture pipeline.
+
+T1 complete: validated config, UTC audit with redaction, offline CLI scaffold and SQLite state. Lint and all 12 tests pass; 99% total coverage.

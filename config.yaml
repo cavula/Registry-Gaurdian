@@ -1,0 +1,11 @@
+registry:
+  type: acr
+  name: demo
+stale_days: 90
+max_high: 5
+keep_last_n: 3
+protected_tags: [latest, prod, "release*"]
+untagged_days: 7
+scan_max_age_days: 7
+dry_run: true
+usage_sources: {}

@@ -1,8 +1,8 @@
 # Open questions
 
-Recorded 2026-11-10 after reading AGENTS.md and SPEC.md in full. These are unresolved decisions, not implementation defaults. Task IDs identify dependent work. Continue independent work when a question blocks a task. All service interactions during development/testing must use mocks and fakes.
+Recorded 2026-11-10 after reading AGENTS.md and SPEC.md in full. Q01–Q16 are resolved by the user's decisions below; later-phase verification gates remain open. Task IDs identify dependent work. Continue independent work when a question blocks a task. All service interactions during development/testing must use mocks and fakes.
 
-## Phase 1 decisions
+## Phase 1 questions (historical context; resolved below)
 
 | ID | Task | Unclear requirement | Best options / decision needed |
 | --- | --- | --- | --- |
@@ -27,7 +27,7 @@ Recorded 2026-11-10 after reading AGENTS.md and SPEC.md in full. These are unres
 
 Public documentation research only; no Azure, Graph, Teams, or LLM service API calls were made. Checked 2026-11-10. These are initial findings and follow-up gates, not approvals to implement later phases.
 
-- **T4 / FR3 — Defender Resource Graph:** Microsoft's [Resource Graph samples](https://learn.microsoft.com/en-us/azure/defender-for-cloud/resource-graph-samples) show SecurityResources assessment/subassessment queries, and the [Microsoft-owned query example](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Kusto/Azure%20Resource%20Graph/List%20Container%20Registry%20Vulnerability%20Assessment%20Results/readme.md) uses `microsoft.security/assessments/subassessments`. The [current release notes](https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes/) also mention retirement of legacy grouped recommendations/subassessments. This creates a possible conflict with FR3's prescribed schema. Q08 stays open: inspect the current applicable schema and exact field names before writing the query; do not assume the older sample is sufficient.
+- **T4 / FR3 — Defender Resource Graph:** Microsoft's [Resource Graph samples](https://learn.microsoft.com/en-us/azure/defender-for-cloud/resource-graph-samples) show SecurityResources assessment/subassessment queries, and the [Microsoft-owned query example](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Kusto/Azure%20Resource%20Graph/List%20Container%20Registry%20Vulnerability%20Assessment%20Results/readme.md) uses `microsoft.security/assessments/subassessments`. The [current release notes](https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes/) also mention retirement of legacy grouped recommendations/subassessments. This creates a possible conflict with FR3's prescribed schema. Q08 is resolved for Phase 1 by fixture-only scanning; production verification remains open: inspect the current applicable schema and exact field names before writing the query; do not assume the older sample is sufficient.
 - **T9 / FR18 — ACR soft delete (Phase 2 gate):** The [soft-delete policy documentation](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-soft-delete-policy?tabs=azure-portal) labels the feature preview. Microsoft's [ACR security guidance](https://learn.microsoft.com/en-us/azure/container-registry/secure-container-registry) says geo-replicated registries are unsupported and soft delete should not be the only recovery control there. Open: verify current region/tier/retention restrictions, index/child recovery, and restoration of all original tags before accepting soft_delete as a successful backup. Options: retain blob as the default, or permit soft_delete only after explicit capability validation. No soft-delete assumption is made for v0.1.
 - **T8 / FR13 — Teams SDK fit (Phase 2 gate):** Microsoft's [Teams SDK quickstart](https://learn.microsoft.com/en-us/microsoftteams/platform/teams-sdk/getting-started/quickstart) and [Python reference](https://learn.microsoft.com/en-us/python/api/msteams-sdk-python/?view=msteams-sdk-python-latest) document Python support. These results alone do not establish Azure Functions hosting, proactive channel notifications, authenticated card actions, or countdown/update fit. Open: verify those requirements against the current SDK/hosting docs before T8. Options remain Teams SDK on Functions, Teams SDK on Container Apps if Functions is unsuitable, or Microsoft 365 Agents SDK if required features are missing; record evidence and the final choice here. Never use the retired Bot Framework SDK.
 
@@ -37,3 +37,22 @@ Public documentation research only; no Azure, Graph, Teams, or LLM service API c
 - **T9:** Define a restorable backup manifest including original tags, index children, registry/repository identity, integrity verification, restore caller identity, and behavior when original tags now point elsewhere. Blob OCI export mechanics and retention provisioning need a documented contract.
 - **T10 (Phase 3):** Define summary timezone, week boundaries, GB/trend calculations, open-alert resolution, and audit retention needed for four-week metrics.
 - **T11, T12:** Define production deployment/authentication setup and how the prohibition on live service calls during agent work relates to operator-run production examples. Implementation and validation here remain entirely mocked.
+
+## Resolved decisions — approved 2026-11-10
+
+- **Q01 — RESOLVED:** Add guardian run --fixtures <dir> with fake registry, usage, pull history, scan, and LLM clients loaded from files. Demo: guardian run --fixtures tests/fixtures/demo.
+- **Q02 — RESOLVED:** Validate current-phase fields only; later-phase fields optional. Durations/ages accept decimals; counts are integers. Defaults: ./config.yaml, ./out/audit.jsonl, ./out/reports/. All times UTC.
+- **Q03 — RESOLVED:** Use read-only RegistryReader in Phase 1. Separate RegistryDeleter belongs only to the Phase 2 executor; build no deleter now.
+- **Q04 — RESOLVED:** Add lock status/evidence flags to internal models. Incomplete inventory/child data forces KEEP for that digest; locked digests are KEEP with reason locked.
+- **Q05 — RESOLVED:** Injected clients/local fixtures; plain Kubernetes YAML and static Helm values only, no rendering. Log unresolved references and KEEP affected repositories.
+- **Q06 — RESOLVED:** Verify documented pull fields with current docs and fixtures. Missing config/disabled logs means incomplete history; query errors force KEEP for all candidates.
+- **Q07 — RESOLVED:** Untagged items require history covering untagged_days or KEEP. Parent/child pulls protect each other; missing child timestamps force KEEP.
+- **Q08 — RESOLVED:** ScanProvider interface; Phase 1 Defender uses fixtures only, no hard-coded production query. Retain schema findings; final query is a pre-production decision.
+- **Q09 — RESOLVED:** Per-image Defender-to-Trivy fallback is allowed. Both unavailable/failed means UNKNOWN and KEEP for that image. Only usage-source or pull-history failure forces KEEP for the whole run.
+- **Q10 — RESOLVED:** KEEP overrides all; otherwise STALE_AND_INSECURE, STALE, INSECURE, UNTAGGED. Separate security facts for in-use alerts. Rank tagged digests by push time, ties by digest; untagged manifests do not count.
+- **Q11 — RESOLVED:** Strict older-than comparisons; normalize UTC. Missing/future timestamps force KEEP. Case-sensitive fnmatch globs. Unknown severities mean UNKNOWN, never safe.
+- **Q12 — RESOLVED:** No child referenced by any index is proposed alone; only orphans can be UNTAGGED. Traverse with deduplication; count each blob size once.
+- **Q13 — RESOLVED:** Local recording approval/alert fakes returning simulated IDs, no external calls. MCP stdio transport and JSON schemas for all tools.
+- **Q14 — RESOLVED:** Probe tool calling using the fake. Count individual calls; hitting 200 ends incomplete with no candidates. LLM timeout 60 seconds, two retries, then fallback.
+- **Q15 — RESOLVED:** Local SQLite state. Fingerprint hashes sorted candidate digests/verdicts; new alerts/requests only when fingerprint changes.
+- **Q16 — RESOLVED:** Decimal GB; timestamp-and-run-ID report files; 1,000-image fixture benchmark; exact release tag v0.1.
