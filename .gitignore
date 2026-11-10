@@ -150,6 +150,7 @@ activemq-data/
 *.sage.py
 
 # Environments
+# Keep local environment secrets out of version control.
 .env
 .envrc
 .venv
