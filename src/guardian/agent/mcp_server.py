@@ -36,7 +36,14 @@ INPUTS = {
     "get_images_in_use": object_schema({}),
     "get_pull_history": object_schema({}),
     "get_scan_results": object_schema({"digest": STRING}),
-    "evaluate_policy": object_schema({"digest": STRING}),
+    "evaluate_policy": {
+        "oneOf": [
+            object_schema({"digest": STRING}),
+            object_schema(
+                {"digests": {**array_schema(STRING), "minItems": 1, "uniqueItems": True}}
+            ),
+        ]
+    },
     "request_approval": object_schema(
         {"digests": {**array_schema(STRING), "minItems": 1, "uniqueItems": True}, "summary": STRING}
     ),
@@ -202,7 +209,11 @@ class ToolService:
                 ]
             }
         if name == "evaluate_policy":
-            matches = self._matching(arguments["digest"])
+            matches = [
+                i
+                for digest in arguments.get("digests", [arguments.get("digest")])
+                for i in self._matching(digest)
+            ]
             self.evaluated.update(key(i) for i in matches)
             return {
                 "results": [

@@ -64,3 +64,7 @@ Verified the [Microsoft table reference](https://learn.microsoft.com/en-us/azure
 ### T4 implementation decision — verified 2026-11-10
 
 Rechecked Microsoft's Resource Graph sample and release-notes pages linked above. The documented assessment sample still uses securityresources and assessment/subassessment resource types, while release notes describe schema/recommendation transitions. Per resolved Q08, Phase 1 consumes normalized repository/digest, vulnerability counts, scan source and scanned_at fixture fields through ScanProvider; no production query or assessment ID is embedded. Production digest and scan timestamp mapping remains explicitly unverified and must be finalized before production.
+
+### Q17 — RESOLVED (T6, T7, T10; 2026-11-10)
+
+The per-image evaluate_policy requirement conflicted with the 200 individual-call cap for a 1,000-image registry. The user approved batch policy evaluation. Extend evaluate_policy to accept either digest or a nonempty unique digests array, returning one result per image; retain eight tools and the 200 individual-call cap. The 1,000-image benchmark must complete a full review using batching, not silently settle for incomplete.
