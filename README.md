@@ -1,6 +1,6 @@
 # Registry Guardian
 
-Registry Guardian reviews container registry images with deterministic safety policy and an advisory LLM tool loop. **v0.1 is an offline dry-run release:** every registry, usage, pull-history, scanner, and model interaction comes from local fixtures. Alerts and approval IDs are simulated. There is no deletion interface or purge command in this phase.
+Registry Guardian reviews container registry images with deterministic safety policy and an advisory LLM tool loop. **v0.2 runs the review and approval workflow against fixtures and a local test registry.** Registry, usage, pull history, scan, model, and notification interactions use fixtures or injected fakes.
 
 Requires Python 3.11 or newer.
 
@@ -31,7 +31,7 @@ The MCP command serves eight tools over stdio. The evaluate_policy tool accepts 
 
 ## Configuration and fixture contracts
 
-Only Phase 1 settings are required. Counts are integers; ages and durations accept decimals. dry_run defaults to true. The offline CLI remains read-only even if config sets it false. Later-phase settings are optional.
+Counts are integers. Ages and durations accept decimals. The review command is read-only, and purge and restore default to dry run. The test-registry workflow uses the approval and backup settings below.
 
 A fixture directory contains:
 
@@ -61,4 +61,24 @@ pytest -s tests/test_report.py::test_1000_images_complete_benchmark
 
 The model is limited to 200 individual tool calls. Cap exhaustion, unsafe calls, and incomplete review produce an incomplete report with zero candidates. Deterministic local safety alerts survive model failure. SQLite fingerprints suppress unchanged simulated requests and alerts across repeated runs.
 
-Phase 1 includes T1–T7 and the Markdown-report portion of T10. Phase 2 (Teams approvals, Graph email, grace periods, executor, backup and restore) and Phase 3 (additional usage sources, weekly metrics, workflow/container deployment and full production setup documentation) remain unbuilt. Current Microsoft schema/SDK verification gates and unresolved production decisions are in OPEN_QUESTIONS.md. See PROGRESS.md for task evidence and the release review gate.
+## Test-registry approval and purge
+
+The test-registry workflow uses a SQLite registry seeded with OCI fixtures. The fixture directory supplies usage, pull and scan evidence and scripted model responses. Run the complete workflow with:
+
+```bash
+pytest -q tests/test_executor_cli.py
+```
+
+Use the same registry database and configuration throughout the workflow:
+
+```bash
+guardian run --fixtures ./fixtures --registry-db ./registry.db --config ./config.yaml
+guardian purge --fixtures ./fixtures --registry-db ./registry.db --backup-dir ./backups --config ./config.yaml
+guardian restore sha256:DIGEST --repository app --actor alice --fixtures ./fixtures --registry-db ./registry.db --backup-dir ./backups --config ./config.yaml
+```
+
+A successful review with candidates prints the approval ID. Approvals and the notification outbox use the configured `state_path`. An injected Teams worker delivers the approval card and checks approver group membership when handling decisions. After the grace period, purge refreshes evidence, verifies a Cool-tier OCI archive, and removes the approved repository and digest from the test registry. The worker delivers the final results from the outbox.
+
+Set `dry_run: false` in the test configuration to apply purge or restore. The backup configuration accepts `mode: blob` and `retention_days` (default 30). A restore verifies the archive and checks all original tags before writing. A conflict refuses the entire restore and preserves existing tags. Pass `--repository` when the digest occurs in more than one repository.
+
+Production deployment and Phase 3 coverage work are tracked in [OPEN_QUESTIONS.md](OPEN_QUESTIONS.md). Task verification and release gates are in [PROGRESS.md](PROGRESS.md).

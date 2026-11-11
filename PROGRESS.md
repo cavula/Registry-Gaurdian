@@ -108,10 +108,24 @@ Review fixes complete: both regressions pass, repository-qualified request schem
 Human approval to proceed received with the v0.1 review request. Work T8 then T9; push main after each task commit. Continue mocked/fake service access only and stop after v0.2.
 
 - [x] T8: SQLite approval batch/per-item lifecycle, expiring pending requests, transitive approver membership guard, authenticated Teams action bridge, approval/alert/countdown/final cards, cancellation routes, Graph email payloads and scheduler ticks. Retain Teams SDK Python on Azure Functions via ASGI if local compatibility tests pass. Never trust user identity from card data. Use injected SDK/Graph transports.
-- [ ] T9: executor-only RegistryDeleter, due-record purge with fresh pure-policy rechecks, per-item locking and cancellation coordination, verified backup before deletion, OCI blob backup/restore and capability-checked soft delete, dry-run-default purge/restore CLI and fixture end-to-end workflow. At least 80% executor coverage; no delete MCP tool.
+- [x] T9: executor-only RegistryDeleter, due-record purge with fresh pure-policy rechecks, per-item locking and cancellation coordination, verified backup before deletion, OCI blob backup/restore with soft delete deferred by Q20, dry-run-default purge/restore CLI and fixture end-to-end workflow. At least 80% executor coverage; no delete MCP tool.
 
 ### T8 — active plan
 
 Use a durable SQLite batch record with repository-qualified item snapshots and per-item status/outcome so cancellation and partial purge remain independently representable. PENDING expires at TTL; only membership-validated approvers can approve/reject/cancel. Approval schedules each item at UTC now plus decimal grace hours; deadline cancellation is strict. Graph membership errors deny. Use an outbox for card/email deliveries and mocks for all endpoints. Add SDK-authenticated card callbacks and authenticated email cancellation routing; validate Functions ASGI lifecycle locally. Test lifecycle, access denial, expiry, duplicate clicks, deadline and per-item cancellation, cards, emails and notification retries.
 
 T8 complete. Added durable approvals, authenticated Teams and email cancellation, Graph membership and notification transports, and countdown and expiry handling. Ruff and all 127 tests pass. The cancellation route accepts an injected clock for deterministic expiry tests.
+
+### T9 — active plan
+
+Use repository-qualified scheduled items and an atomic SQLite claim. Re-evaluate fresh registry, usage, pull and scan evidence before backup and again before conditional deletion. Check the approved verdict and manifest graph, preserve locks and child manifests, and record every outcome. Verify the OCI archive by digest after storing it through an injected Cool-tier Blob transport. Restore all original tags with an atomic conflict check. Keep the purge CLI dry by default and exercise the full workflow against a local test registry with mocked notifications. Verify coverage and the release gate before tagging v0.2.
+
+T9 complete. The fixture CLI reviews and persists one approval per unchanged candidate fingerprint, previews by default, and supports verified OCI backup, guarded purge, and atomic restore with original tags. All 179 tests pass, with 100% policy and 93% executor coverage.
+
+## Phase 2 summary — v0.2 (2026-11-10)
+
+- T8 added durable approvals, registry-scoped approver checks, expiry and decimal grace periods, item cancellation, authenticated Teams and email-link actions, and a notification outbox.
+- T9 connected review to the approval store and implemented due-item claims, two policy rechecks, OCI archive verification, conditional registry deletion, final notifications, and audited restore.
+- The full workflow runs against the SQLite test registry and injected notification and Blob transports. Restore refuses tag conflicts. Blob backup is the supported mode under Q20.
+- Ruff lint and formatting pass. The full suite passes all 179 tests. Policy coverage is 100%, purge coverage is 88%, and executor package coverage is 93%. The Teams SDK emits three upstream warnings during tests.
+- Release gate: push T9 and tag v0.2, then stop for human review before Phase 3. Production and interrupted-purge reconciliation questions are recorded in OPEN_QUESTIONS.md.

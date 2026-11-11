@@ -13,6 +13,7 @@ from guardian.audit.log import AuditLog
 from guardian.config import Config, utc
 from guardian.llm.client import FixtureLLM, ResilientClient
 from guardian.models import Evidence, Image
+from guardian.registries.base import RegistryReader
 from guardian.registries.fixtures import FixtureRegistry
 from guardian.report.markdown import render_report, write_report
 from guardian.scanning.base import scan_images
@@ -41,11 +42,10 @@ def fixture_path(root: Path, relative: str) -> Path:
     return path
 
 
-def prepare(
-    fixtures: Path, config: Config, audit: AuditLog, now: datetime
-) -> tuple[ToolService, list[str]]:
-    """Gather complete offline evidence before the model can request a review."""
-    registry = FixtureRegistry(fixtures / "registry.json")
+def collect_fixture_evidence(
+    fixtures: Path, config: Config, audit: AuditLog, now: datetime, registry: RegistryReader
+) -> tuple[list[Image], Evidence]:
+    """Gather current inventory and policy evidence from injected fixture sources."""
     images: list[Image] = []
     for repo in registry.list_repositories():
         images.extend(registry.list_images(repo))
@@ -73,7 +73,7 @@ def prepare(
     unsupported = set(usage) - {"aks", "aks_failed", "git_manifests"}
     if unsupported:
         evidence.usage_failed = True
-        evidence.alerts.append("Unsupported Phase 1 usage source; all candidates kept")
+        evidence.alerts.append("Unsupported fixture usage source; all candidates kept")
     collect_usage(sources, images, evidence, audit.write)
     pulls = read_json(fixtures / "pulls.json")
 
@@ -96,8 +96,28 @@ def prepare(
     )
     for warning in evidence.alerts:
         audit.write("safety_fact", message=warning, simulated=True)
+    return images, evidence
+
+
+def prepare(
+    fixtures: Path,
+    config: Config,
+    audit: AuditLog,
+    now: datetime,
+    *,
+    registry: RegistryReader | None = None,
+) -> tuple[ToolService, list[str]]:
+    """Gather complete offline evidence before the model can request a review."""
+    reader = registry if registry is not None else FixtureRegistry(fixtures / "registry.json")
+    images, evidence = collect_fixture_evidence(fixtures, config, audit, now, reader)
     service = ToolService(
-        registry, images, config, evidence, now, audit, StateStore(config.state_path)
+        reader if registry is None else None,
+        images,
+        config,
+        evidence,
+        now,
+        audit,
+        StateStore(config.state_path),
     )
     for warning in evidence.alerts:
         identifier = "safety-" + hashlib.sha256(warning.encode()).hexdigest()[:16]
@@ -107,32 +127,46 @@ def prepare(
     return service, evidence.alerts
 
 
-def execute(fixtures: Path, config: Config) -> tuple[Path, RunResult]:
+def execute(
+    fixtures: Path, config: Config, *, registry_db: Path | None = None
+) -> tuple[Path, RunResult]:
     """Run the entire offline review and write a report even for runtime failures."""
     run_id = str(uuid4())
     stamp = datetime.now(UTC)
     audit = AuditLog(config.audit_path, run_id)
     audit.write("run_started", dry_run=True, transport="fixtures")
-    # This phase never enables mutations, including when config requests dry_run=false.
     warnings: list[str] = []
     try:
         run_data = read_json(fixtures / "run.json")
         now = utc(datetime.fromisoformat(run_data["now"])) if run_data.get("now") else stamp
-        service, warnings = prepare(fixtures, config, audit, now)
+        registry = None
+        if registry_db is not None:
+            from guardian.executor.fixture_registry import FixtureRegistryStore
+
+            registry = FixtureRegistryStore(registry_db, config.registry.name)
+        service, warnings = prepare(fixtures, config, audit, now, registry=registry)
         primary = read_json(fixtures / "llm.json")
         providers = [(config.llm.provider, FixtureLLM(primary))]
         for entry in config.llm.fallback:
             label = str(entry["provider"])
             providers.append((label, FixtureLLM(primary.get("fallbacks", {}).get(label, {}))))
         result = run_agent(ResilientClient(providers, audit.write), service, now)
+        if registry is not None and result.complete and service.requested:
+            from guardian.approval.service import ApprovalService
+            from guardian.approval.store import ApprovalStore
+
+            approvals = ApprovalService(
+                ApprovalStore(config.state_path), config, lambda _actor, _group: False, audit
+            )
+            batch = approvals.request(service.images, service.evidence, service.requested, now)
+            result.approval_id = batch.approval_id
     except Exception:
         # Never put raw validation/transport exception strings into logs or reports.
         warnings.append("Offline fixture preparation failed; nothing proposed")
         audit.write("preparation_failed", candidates_discarded=True)
-        registry = None
         # Do not reparse potentially malformed data to produce a failure report.
         service = ToolService(
-            registry, [], config, Evidence(), stamp, audit, StateStore(config.state_path)
+            None, [], config, Evidence(), stamp, audit, StateStore(config.state_path)
         )
         result = RunResult(
             complete=False, tool_calls=0, narrative="", failure="Offline fixture preparation failed"

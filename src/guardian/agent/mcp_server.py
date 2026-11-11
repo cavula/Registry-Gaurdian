@@ -133,6 +133,7 @@ class ToolService:
     ) -> None:
         self.reader = reader
         self.config = config
+        self.evidence = evidence
         self.images = evaluate(images, config, evidence, now)
         self.audit = audit
         self.state = state

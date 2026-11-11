@@ -83,14 +83,17 @@ T8: verified [proactive messaging](https://learn.microsoft.com/en-us/microsoftte
 
 Graph: [checkMemberGroups](https://learn.microsoft.com/en-us/graph/api/directoryobject-checkmembergroups?view=graph-rest-1.0) checks transitive security-group membership; membership errors deny. [sendMail](https://learn.microsoft.com/en-us/graph/api/user-sendmail?view=graph-rest-1.0) supports the service mailbox endpoint. All calls remain injected fakes.
 
-T9: [ACR soft delete](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-soft-delete-policy) is preview, supports 1–90 days, and is incompatible with geo-replication/artifact cache and concurrent retention policy. Restoring an index does not recursively restore its children. Blob stays default; soft delete requires explicit recovery capability checks and all original tags/graph metadata.
+T9: [ACR soft delete](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-soft-delete-policy) is preview, supports 1–90 days, and is incompatible with geo-replication/artifact cache and concurrent retention policy. Restoring an index does not recursively restore its children. Blob is the v0.2 backup mode. Q20 defers soft delete until a recovery design can validate and restore the full graph.
 
 Internal representation: preserve the spec's approval statuses per item and retain a batch aggregate. Track executor processing outcomes separately (SKIPPED/FAILED/DELETED) to avoid inventing approver actions or retrying terminal skips. Notification delivery uses a durable local outbox; failures never authorize deletion.
 
 ### Q19 — RESOLVED (T9)
-If original tags now point elsewhere during restore: refuse on conflict, or explicitly overwrite? Asked user; implement independent backup/executor work while awaiting answer.
+The user chose to refuse the entire restore if an original tag now points elsewhere. The test registry checks all original tags atomically and preserves current owners.
 
 ### Q20 — RESOLVED (T9)
-Soft-delete preview: capability-validated mocked recovery with blob default, or defer soft-delete mode entirely? Asked user; blob work is independent.
+The user chose to defer soft-delete mode from v0.2. The CLI accepts blob mode.
 
-User decisions: Q19 restore refuses tag conflicts and preserves current tags. Q20 defers soft-delete mode entirely from v0.2; blob backup is the only implemented backup mode.
+### T9 production questions
+
+- **Interrupted purge.** The test registry uses conditional deletion and SQLite prevents duplicate claims on an approval item. A process interruption after the backup checkpoint may leave a claimed item. Before supporting live deletion, decide how to reconcile that claim with registry presence and the saved backup. Options include operator reconciliation or a durable mutation receipt. Do not automatically retry uncertain deletion.
+- **Deployment.** Teams and Graph notification delivery use injected transports, and Blob lifecycle policy is supplied through an injected updater. A production deployment needs credential provisioning, a scheduler, and a lifecycle updater that preserves existing rules. Q20 leaves soft-delete recovery outside this release.

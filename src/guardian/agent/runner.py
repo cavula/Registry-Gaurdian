@@ -30,6 +30,7 @@ class RunResult(BaseModel):
     tool_calls: int
     narrative: str
     failure: str | None = None
+    approval_id: str | None = None
 
 
 def required_security_alerts(service: ToolService, now: datetime) -> set[str]:

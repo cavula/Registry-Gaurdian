@@ -153,3 +153,20 @@ def test_request_refuses_keep_and_unknown_items(tmp_path: Path) -> None:
         service.request([image(tags=["prod"])], Evidence(), [("app", "a")], NOW)
     with pytest.raises(ValueError):
         service.request([image()], Evidence(), [("mirror", "a")], NOW)
+
+
+def test_shared_store_does_not_grant_cross_registry_approval(tmp_path: Path) -> None:
+    service, bot, send, _ = setup(tmp_path)
+    foreign = config(registry={"name": "other"}, approvers_group_id="other-group")
+    other = ApprovalService(service.store, foreign, lambda *_: True, service.audit)
+    batch = other.request([image(registry="other")], Evidence(), [("app", "a")], NOW)
+    assert bot.action("approve", batch.approval_id, "alice", now=NOW) == "not authorised"
+    service.tick(batch.expires_at)
+    bot.flush(NOW)
+    assert service.store.get(batch.approval_id).status == Status.PENDING
+    send.assert_not_called()
+
+
+@pytest.mark.parametrize("value", ["group", {"group": True}, None])
+def test_malformed_graph_membership_denies(value: object) -> None:
+    assert not GraphMembership(lambda *_: {"value": value})("alice", "group")

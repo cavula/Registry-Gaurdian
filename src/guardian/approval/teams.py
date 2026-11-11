@@ -22,7 +22,8 @@ class GraphMembership:
         result = self.call(
             f"/users/{quote(actor, safe='')}/checkMemberGroups", {"groupIds": [group]}
         )
-        return group in result.get("value", [])
+        groups = result.get("value")
+        return isinstance(groups, list) and group in groups
 
 
 class TeamsBot:
@@ -76,6 +77,8 @@ class TeamsBot:
     def flush(self, now: datetime) -> None:
         """Retry undelivered outbox records; never acknowledge failed delivery."""
         for event in self.service.store.pending_events():
+            if event.batch.registry != self.service.config.registry.name:
+                continue
             batch = self.service.store.get(event.batch.approval_id)
             try:
                 if event.kind == "scheduled" and not event.details.get("email"):

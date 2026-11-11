@@ -33,6 +33,8 @@ class ApprovalService:
     ) -> Batch:
         """Re-evaluate proposed snapshots; persist all original tags and verdicts."""
         now = utc(now)
+        if any(image.registry != self.config.registry.name for image in images):
+            raise ValueError("Approval inventory belongs to a different registry")
         evaluated = {key(i): i for i in evaluate(images, self.config, evidence, now)}
         if (
             not items
@@ -80,7 +82,9 @@ class ApprovalService:
         """Fail closed on missing group settings or any Graph failure."""
         group = getattr(self.config, "approvers_group_id", None)
         try:
-            return bool(actor and group and self.membership(actor, group))
+            return bool(actor and isinstance(group, str) and group) and (
+                self.membership(actor, group) is True
+            )
         except Exception:
             return False
 
@@ -101,10 +105,13 @@ class ApprovalService:
             raise ValueError("Unsupported approval action")
 
         def change(batch: Batch) -> list[str]:
+            if batch.registry != self.config.registry.name:
+                raise PermissionError("not authorised")
             if batch.status == Status.PENDING and now >= batch.expires_at:
                 batch.status = Status.EXPIRED
                 for item in batch.items:
-                    item.status = Status.EXPIRED
+                    if item.status == Status.PENDING:
+                        item.status = Status.EXPIRED
                 return ["expired"]
             selected = set(items) if items is not None else {i.key for i in batch.items}
             if not selected or not selected.issubset({i.key for i in batch.items}):
@@ -123,7 +130,8 @@ class ApprovalService:
                 else:
                     batch.status = Status.REJECTED
                 for item in batch.items:
-                    item.status = batch.status
+                    if item.status == Status.PENDING:
+                        item.status = batch.status
                 return ["scheduled" if action == "approve" else "rejected"]
             changed = False
             for item in batch.items:
@@ -139,13 +147,18 @@ class ApprovalService:
                 if cancellable:
                     item.status = Status.CANCELLED
                     item.cancelled_by = actor
+                    item.outcome_reason = "Cancelled by approver"
                     changed = True
             if changed:
                 batch.cancelled_by = actor
                 batch.aggregate()
             return ["cancelled"] if changed else []
 
-        batch = self.store.mutate(approval_id, change)
+        try:
+            batch = self.store.mutate(approval_id, change)
+        except PermissionError:
+            self.audit.write("approval_refused", approval_id=approval_id, actor=actor)
+            raise
         self.audit.write(
             "approval_action",
             approval_id=approval_id,
@@ -160,12 +173,15 @@ class ApprovalService:
         """Expire pending requests and enqueue refreshed countdown cards."""
         now = utc(now)
         for existing in self.store.list_batches():
+            if existing.registry != self.config.registry.name:
+                continue
 
             def change(batch: Batch) -> list[str]:
                 if batch.status == Status.PENDING and now >= batch.expires_at:
                     batch.status = Status.EXPIRED
                     for item in batch.items:
-                        item.status = Status.EXPIRED
+                        if item.status == Status.PENDING:
+                            item.status = Status.EXPIRED
                     self.audit.write("approval_expired", approval_id=batch.approval_id)
                     return ["expired"]
                 if (
