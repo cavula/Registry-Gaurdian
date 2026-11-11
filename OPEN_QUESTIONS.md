@@ -76,3 +76,21 @@ The inspected Defender sample exposes properties.resourceDetails.id, properties.
 The tool input contract identifies candidates by digest alone, whereas inventory identifies repository/digest pairs. The same digest can exist in different repositories with different tags and protections. Current guardrails refuse the whole simulated batch if any matching record is KEEP, and the run becomes incomplete with no candidates. Options before production: use qualified repository/digest inputs or explicitly define registry-wide digest verdict aggregation. This is a conservative limitation, never a bypass of KEEP.
 
 User decision: request_approval accepts items of {repository, digest}; candidates, requested state and approval fingerprints use repository/digest pairs. SPEC.md and fixtures are updated. An app candidate can be approved while an identical protected digest in mirror remains KEEP. User also clarified Q07: absent child pull events are never-pulled evidence after complete history; only a missing child push timestamp or incomplete history forces KEEP.
+
+## Phase 2 verification and decisions — 2026-11-10
+
+T8: verified [proactive messaging](https://learn.microsoft.com/en-us/microsoftteams/platform/teams-sdk/essentials/sending-messages/proactive-messaging), [card actions](https://learn.microsoft.com/en-us/microsoftteams/platform/teams-sdk/in-depth-guides/adaptive-cards/executing-actions), [trust model](https://learn.microsoft.com/en-us/microsoftteams/platform/teams-sdk/essentials/app-authentication/trust-model), and [self-managed server](https://learn.microsoft.com/en-us/microsoftteams/platform/teams-sdk/in-depth-guides/server/http-server). Python Teams SDK supports proactive app.send, Execute actions and FastAPIAdapter initialization; its message endpoint validates JWTs before handlers. Retain Teams SDK with Azure Functions ASGI, subject to local integration tests. Do not install/use the legacy BotBuilder compatibility package.
+
+Graph: [checkMemberGroups](https://learn.microsoft.com/en-us/graph/api/directoryobject-checkmembergroups?view=graph-rest-1.0) checks transitive security-group membership; membership errors deny. [sendMail](https://learn.microsoft.com/en-us/graph/api/user-sendmail?view=graph-rest-1.0) supports the service mailbox endpoint. All calls remain injected fakes.
+
+T9: [ACR soft delete](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-soft-delete-policy) is preview, supports 1–90 days, and is incompatible with geo-replication/artifact cache and concurrent retention policy. Restoring an index does not recursively restore its children. Blob stays default; soft delete requires explicit recovery capability checks and all original tags/graph metadata.
+
+Internal representation: preserve the spec's approval statuses per item and retain a batch aggregate. Track executor processing outcomes separately (SKIPPED/FAILED/DELETED) to avoid inventing approver actions or retrying terminal skips. Notification delivery uses a durable local outbox; failures never authorize deletion.
+
+### Q19 — RESOLVED (T9)
+If original tags now point elsewhere during restore: refuse on conflict, or explicitly overwrite? Asked user; implement independent backup/executor work while awaiting answer.
+
+### Q20 — RESOLVED (T9)
+Soft-delete preview: capability-validated mocked recovery with blob default, or defer soft-delete mode entirely? Asked user; blob work is independent.
+
+User decisions: Q19 restore refuses tag conflicts and preserves current tags. Q20 defers soft-delete mode entirely from v0.2; blob backup is the only implemented backup mode.

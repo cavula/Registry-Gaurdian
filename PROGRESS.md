@@ -102,3 +102,16 @@ Release: tag exactly v0.1 after this summary is committed. STOPPED for human rev
 Before Phase 2, correct index staleness so an absent child Pull event means never pulled when history covers the window; missing child pushed_at or incomplete history still protects the index. Scope approval identities, requested items, fingerprints, runner/report checks and fixtures to repository/digest pairs. Update SPEC.md and resolve Q18. Add both requested regressions and invalid/duplicate item tests, run lint and all tests, commit exactly "v0.1 review fixes", tag v0.1.1 and push before T8.
 
 Review fixes complete: both regressions pass, repository-qualified request schemas/fingerprints/reporting and SPEC.md updated. Lint and all 106 tests pass; policy coverage remains 100%. Release tag v0.1.1.
+
+## Phase 2 — v0.2
+
+Human approval to proceed received with the v0.1 review request. Work T8 then T9; push main after each task commit. Continue mocked/fake service access only and stop after v0.2.
+
+- [x] T8: SQLite approval batch/per-item lifecycle, expiring pending requests, transitive approver membership guard, authenticated Teams action bridge, approval/alert/countdown/final cards, cancellation routes, Graph email payloads and scheduler ticks. Retain Teams SDK Python on Azure Functions via ASGI if local compatibility tests pass. Never trust user identity from card data. Use injected SDK/Graph transports.
+- [ ] T9: executor-only RegistryDeleter, due-record purge with fresh pure-policy rechecks, per-item locking and cancellation coordination, verified backup before deletion, OCI blob backup/restore and capability-checked soft delete, dry-run-default purge/restore CLI and fixture end-to-end workflow. At least 80% executor coverage; no delete MCP tool.
+
+### T8 — active plan
+
+Use a durable SQLite batch record with repository-qualified item snapshots and per-item status/outcome so cancellation and partial purge remain independently representable. PENDING expires at TTL; only membership-validated approvers can approve/reject/cancel. Approval schedules each item at UTC now plus decimal grace hours; deadline cancellation is strict. Graph membership errors deny. Use an outbox for card/email deliveries and mocks for all endpoints. Add SDK-authenticated card callbacks and authenticated email cancellation routing; validate Functions ASGI lifecycle locally. Test lifecycle, access denial, expiry, duplicate clicks, deadline and per-item cancellation, cards, emails and notification retries.
+
+T8 complete. Added durable approvals, authenticated Teams and email cancellation, Graph membership and notification transports, and countdown and expiry handling. Ruff and all 127 tests pass. The cancellation route accepts an injected clock for deterministic expiry tests.
